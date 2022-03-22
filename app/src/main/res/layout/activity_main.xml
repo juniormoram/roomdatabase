@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    >
+
+    <EditText
+        android:id="@+id/txt_Nombre"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:ems="10"
+        android:hint="Producto"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txt_Cantidad"
+        android:layout_width="354dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_Nombre"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginRight="34dp"
+        android:ems="10"
+        android:hint="Cantidad"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/txt_Precio"
+        android:layout_width="349dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_Cantidad"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginRight="38dp"
+        android:ems="10"
+        android:hint="Precio"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btn_Añadir"
+        android:layout_width="125dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/txt_Precio"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginRight="140dp"
+        android:text="Agregar" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerDatos"
+        android:layout_width="279dp"
+        android:layout_height="430dp"
+        android:layout_below="@+id/btn_Añadir"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="66dp"
+        android:layout_marginLeft="66dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginRight="67dp"
+        android:layout_marginBottom="27dp" />
+
+</RelativeLayout>
